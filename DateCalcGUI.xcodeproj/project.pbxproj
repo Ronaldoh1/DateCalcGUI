@@ -15,6 +15,8 @@
 		F23434BD1B343E9A0065D11C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F23434BC1B343E9A0065D11C /* Images.xcassets */; };
 		F23434C01B343E9A0065D11C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F23434BE1B343E9A0065D11C /* LaunchScreen.xib */; };
 		F23434CC1B343E9A0065D11C /* DateCalcGUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F23434CB1B343E9A0065D11C /* DateCalcGUITests.m */; };
+		F23434D61B3442C50065D11C /* sofia.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F23434D51B3442C50065D11C /* sofia.jpeg */; };
+		F23434D91B3445070065D11C /* DateCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = F23434D81B3445070065D11C /* DateCalculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,9 @@
 		F23434C51B343E9A0065D11C /* DateCalcGUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DateCalcGUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F23434CA1B343E9A0065D11C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F23434CB1B343E9A0065D11C /* DateCalcGUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateCalcGUITests.m; sourceTree = "<group>"; };
+		F23434D51B3442C50065D11C /* sofia.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sofia.jpeg; sourceTree = "<group>"; };
+		F23434D71B3445070065D11C /* DateCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateCalculator.h; sourceTree = "<group>"; };
+		F23434D81B3445070065D11C /* DateCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateCalculator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,8 +92,11 @@
 				F23434B11B343E9A0065D11C /* AppDelegate.m */,
 				F23434B61B343E9A0065D11C /* ViewController.h */,
 				F23434B71B343E9A0065D11C /* ViewController.m */,
+				F23434D71B3445070065D11C /* DateCalculator.h */,
+				F23434D81B3445070065D11C /* DateCalculator.m */,
 				F23434B91B343E9A0065D11C /* Main.storyboard */,
 				F23434BC1B343E9A0065D11C /* Images.xcassets */,
+				F23434D51B3442C50065D11C /* sofia.jpeg */,
 				F23434BE1B343E9A0065D11C /* LaunchScreen.xib */,
 				F23434B31B343E9A0065D11C /* DateCalcGUI.xcdatamodeld */,
 				F23434AC1B343E9A0065D11C /* Supporting Files */,
@@ -202,6 +210,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F23434D61B3442C50065D11C /* sofia.jpeg in Resources */,
 				F23434BB1B343E9A0065D11C /* Main.storyboard in Resources */,
 				F23434C01B343E9A0065D11C /* LaunchScreen.xib in Resources */,
 				F23434BD1B343E9A0065D11C /* Images.xcassets in Resources */,
@@ -226,6 +235,7 @@
 				F23434AF1B343E9A0065D11C /* main.m in Sources */,
 				F23434B81B343E9A0065D11C /* ViewController.m in Sources */,
 				F23434B51B343E9A0065D11C /* DateCalcGUI.xcdatamodeld in Sources */,
+				F23434D91B3445070065D11C /* DateCalculator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
