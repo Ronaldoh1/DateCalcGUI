@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,20 +14,20 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sofia.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="QsF-z7-4kI">
-                                <rect key="frame" x="121" y="57" width="150" height="133"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="sofia.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="QsF-z7-4kI">
+                                <rect key="frame" x="85" y="57" width="150" height="259"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Can I date her?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AgE-xq-8Pz">
-                                <rect key="frame" x="148" y="28" width="118" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Can I date her?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AgE-xq-8Pz">
+                                <rect key="frame" x="101" y="28" width="118" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCf-fm-Oka">
-                                <rect key="frame" x="153" y="207" width="65" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCf-fm-Oka">
+                                <rect key="frame" x="128" y="268" width="65" height="119"/>
                                 <state key="normal" title="Calculate">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -34,16 +35,29 @@
                                     <action selector="calculate:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gH5-dn-piD"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jT6-oO-bEJ">
-                                <rect key="frame" x="43" y="250" width="236" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jT6-oO-bEJ">
+                                <rect key="frame" x="139" y="351" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AgE-xq-8Pz" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" symbolic="YES" id="3kg-a4-D7a"/>
+                            <constraint firstAttribute="centerX" secondItem="AgE-xq-8Pz" secondAttribute="centerX" id="65D-3w-b43"/>
+                            <constraint firstAttribute="centerX" secondItem="gCf-fm-Oka" secondAttribute="centerX" id="EPI-7n-Bm9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QsF-z7-4kI" secondAttribute="trailing" constant="69" id="Tqb-8k-qlD"/>
+                            <constraint firstItem="gCf-fm-Oka" firstAttribute="top" secondItem="QsF-z7-4kI" secondAttribute="bottom" constant="-48" id="bEz-53-00o"/>
+                            <constraint firstItem="jT6-oO-bEJ" firstAttribute="top" secondItem="gCf-fm-Oka" secondAttribute="bottom" constant="-36" id="bm2-2a-PTZ"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="jT6-oO-bEJ" secondAttribute="bottom" constant="108" id="faF-Uv-xn2"/>
+                            <constraint firstAttribute="centerX" secondItem="jT6-oO-bEJ" secondAttribute="centerX" id="iHk-dl-uYV"/>
+                            <constraint firstAttribute="centerX" secondItem="QsF-z7-4kI" secondAttribute="centerX" id="llE-vl-KHv"/>
+                            <constraint firstItem="QsF-z7-4kI" firstAttribute="top" secondItem="AgE-xq-8Pz" secondAttribute="bottom" constant="8" symbolic="YES" id="n4q-TW-BR9"/>
+                            <constraint firstItem="QsF-z7-4kI" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="69" id="ttb-or-v3b"/>
+                        </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="resultsLabel" destination="jT6-oO-bEJ" id="0Mr-Y3-y0k"/>
                     </connections>
